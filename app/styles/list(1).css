@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "微软雅黑";
+  font-size: 0.35rem;
+}
+.sxl-zuida {
+  height: 17.5rem;
+  width: 16rem;
+  background: #F7F7F7;
+}
+.sxl-zuida .sxl-biao {
+  background: #ffffff;
+  width: 16rem;
+  height: 2.05rem;
+  font-size: 0.85rem;
+  line-height: 2.05rem;
+  text-align: center;
+  color: #d51d1e;
+}
+.sxl-zuida .sxl-biao img {
+  width: 0.55rem;
+  height: 0.975rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+/*# sourceMappingURL=list.css.map */

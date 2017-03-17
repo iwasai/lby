@@ -14,7 +14,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet/less" href="styles/list.less">
     <!-- endbuild -->
   </head>
   <body ng-app="appApp">
@@ -49,6 +49,14 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/list.js"></script>
+        <script src="scripts/controllers/less_last.js"></script>
         <!-- endbuild -->
+       
+	  <script>
+			document.documentElement.style.fontSize = innerWidth / 16 + "px";
+			onresize = function() {
+				document.documentElement.style.fontSize = innerWidth / 16 + "px";
+			}
+		</script>
 </body>
 </html>
