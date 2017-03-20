@@ -9,16 +9,20 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+       <link rel="stylesheet" type="text/css" href="styles/swiper-3.4.2.min.css"/>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet/less" href="styles/list.less">
+    <link rel="stylesheet/less" href="styles/home.less"/>
+ 
     <!-- endbuild -->
   </head>
   <body ng-app="appApp">
     <!--[if lte IE 8]>
+    	
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 	<div ui-view></div>
@@ -41,6 +45,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="scripts/swiper-3.4.2.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -50,6 +55,7 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/list.js"></script>
         <script src="scripts/controllers/less_last.js"></script>
+        <script src="scripts/home.js" type="text/javascript" charset="utf-8"></script>
         <!-- endbuild -->
        
 	  <script>
@@ -57,6 +63,10 @@
 			onresize = function() {
 				document.documentElement.style.fontSize = innerWidth / 16 + "px";
 			}
+			var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 		</script>
 </body>
 </html>

@@ -10,13 +10,13 @@
  */
 angular.module('appApp', ['ui.router'])
 	.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-		$stateProvider.state('login', {
-				url: '/login',
-				templateUrl: 'views/login.html'
+		$stateProvider.state('home', {
+				url: '/home',
+				templateUrl: 'views/home.html'
 			})
 			.state('list', {
 				url: '/list',
 				templateUrl: 'views/list.html'
 			})
-		$urlRouterProvider.otherwise('/login')
+		$urlRouterProvider.otherwise('/home')
 	}])
