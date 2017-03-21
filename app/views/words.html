@@ -1,0 +1,70 @@
+<div class="words">
+	<div class="release">
+		<span>留言列表</span>
+	</div>
+	<div class="wordsList">
+		<ul class="ul">
+			<li>l傲娇跑完奥朵爱仕傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱达阿斯都爱健康朗阿打算几点asdkal</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+						<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+<li>l傲娇跑完奥朵爱仕傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱达阿斯都爱健康朗阿打算几点asdkal</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+						<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li><li>l傲娇跑完奥朵爱仕傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱达阿斯都爱健康朗阿打算几点asdkal</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+						<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+			<li>傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱傲娇跑完奥朵爱仕达阿斯都爱</li>
+		
+		
+		</ul>
+	</div>
+	<div class="footers">
+		<ul>
+			<li ui-sref="admin">新闻</li>
+			<li ui-sref="manage">案例</li>
+			<li ui-sref='words'>留言</li>
+		</ul>
+	</div>
+	<div class="show">
+		<p>详情</p>
+		<p>删除</p>
+		<p class="up">取消</p>
+	</div>
+	<div class="op">
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+			$('.ul>li').click(function() {
+				$('.show').css({ 'bottom': '0' })
+				$('.show').css({ 'transition': '.5s' })
+				$('.op').css({ 'transition': '.2s' })
+				$('.op').css({ 'display': 'block' })
+			})
+			$('.up').click(function() {
+				$('.show').css({ 'bottom': '-100%' })
+				$('.show').css({ 'transition': '.5s' })
+				$('.op').css({ 'transition': '.2s' })
+				$('.op').css({ 'display': 'none' })
+
+			})
+			$.imageFileVisible({
+
+				wrapSelector: "#image-wrap",
+				fileSelector: "#file",
+				width: 10 + 'rem',
+				height: 5 + 'rem'
+			});
+			$('#file').click(function() {
+				$('#image-wrap').html('')
+			})
+		});
+</script>

@@ -13,10 +13,18 @@ angular.module('appApp', ['ui.router'])
 		$stateProvider.state('home', {
 				url: '/home',
 				templateUrl: 'views/home.html'
-			})
-			.state('list', {
-				url: '/list',
-				templateUrl: 'views/list.html'
-			})
-		$urlRouterProvider.otherwise('/home')
-	}])
+		})
+		$stateProvider.state('manage', {
+				url: '/manage',
+				templateUrl: 'views/manage.html'
+		})
+		$stateProvider.state('admin', {
+				url: '/admin',
+				templateUrl: 'views/admin.html'
+		})
+		$stateProvider.state('words', {
+				url: '/words',
+				templateUrl: 'views/words.html'
+		})
+		$urlRouterProvider.otherwise('/admin')
+}])
